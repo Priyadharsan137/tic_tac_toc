@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+            <div class="usrdet">
+                <h1 class="hed">Tic-tac-toe</h1><br><br><br>
+                <label>Username</label><br>
+                <input type="text" id="userid" placeholder="enter your user name....."><br><br>
+                <label>password</label><br>
+                <input type="password" id="usrpas" placeholder="enter the password....."><br>
+                <button onclick="login();" class="log_btn">Login</button><br><br>
+                <p style="font-weight: bolder;margin-top: 20px;margin-left: 40px;">Forget Password?</p><br>
+
+                <p style="font-weight: bolder;margin-top: 20px;margin-left: 60px;">New User?</p>
+                <button onclick="signup();" class="signup" style="width: 25%;">SignUp</button> 
+            </div>
+            
+        </div>
+        <div class="child2">           
+                <div class="usrprf">
+                    <br>
+                    <p style="margin-left: 70px;color:#115261;">UserId:a1b2c3d</p><br>
+                    <a href="tictactoelogin.html" style="margin-left: 70px;color:#0788a5;text-decoration: none;">Leaderboard</a>
+                    <br><br><br>
+                    <input type="text" id="conid" class="conin" placeholder="connection id">
+                    <button onclick="conet();" class="conusr">Connect--></button>  
+                    <h5>If u  want to change the user id?</h5>
+                    <input type="text" id="upid" placeholder="enter the id">
+                    <button onclick="upusrid();" class="upbtn">Update</button><br>
+                    
+                 
+
+
+                </div>
+
+        </div>      
+
+    </div>
+</body>
+</html>

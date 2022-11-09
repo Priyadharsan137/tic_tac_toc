@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns:700px auto;
+    height:752px;
+}
+.child1{
+   background-color: #115261;
+   color: rgb(27, 26, 26);
+   background-image: url(./loginimg.jpg);
+   background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat; 
+    
+}
+.child2{
+    
+    background-color: #2DA7A7;
+   color: white;
+    
+}
+.hed{
+    color: #115261;
+    margin-left: 2%;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #115261;
+    color: white;
+    width: 50%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow:0px 4px 4px 2px rgba(87, 203, 253, 0.493);
+}
+.usrdet{
+    margin-left: 35%;
+    margin-top: 15%;
+}
+input[type=text],input[type=password]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #115261;
+    border-radius: 4px;
+    box-sizing: border-box;
+	
+}
+input[type=text]:focus,input[type=password]:focus{
+    outline: 0px;
+    border: 3px solid#2DA7A7;
+}
+button
+{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 25%;
+    background-color: #115261;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    border: thin;
+    box-shadow:0px 4px 4px 2px rgba(87, 203, 253, 0.493);
+}
+button:hover{
+    background-color: white;
+    color: #115261;
+}
+.usrprf{
+    margin-left: 22%;   
+    width:55%;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 50px;
+    height: 11%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.493);
+    background-image: url(./prof.jpg);
+    background-repeat: no-repeat;
+    background-size: 14%;   
+}
+h5{
+    
+    margin-top: 10%;
+}
+footer{
+    border-radius: 10px;
+    margin-top:70%;
+    width: 100%;
+    padding: 2%;
+    background-color: #115261;
+}
+
+@media only screen and (max-width:600px){
+    .parent{
+        grid-template-columns: 1fr;
+        grid-template-rows: 95% 90%;        
+    }
+    
+    input[type=text],input[type=password]{
+        
+        width: 70%;
+        padding: 18px 25px;
+        
+    }
+    .usrdet{
+        margin-left: 20%;
+        
+    }
+    button{
+        margin-left: 70px;
+    }
+    .hed{
+        width: 70%;
+    }
+    .usrprf{
+        background-size: 30%;
+        height: 12%;
+    }
+    h5{
+        margin-top:20%;
+
+    }
+    .upbtn{
+        width: 35%;
+        margin-left: 5px;
+    }
+    .conusr{
+       width: 50%;
+       margin-left: 5px;
+    }
+    .conin{
+        height: 12%;
+        
+    }
+    footer{
+        margin-top: 68%;
+        width: 178%;
+        margin-left: -40%;
+    }
+}
